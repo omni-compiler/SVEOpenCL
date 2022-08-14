@@ -29,12 +29,12 @@ createCommandQueue(socl::Context *Ctx,
   return CQ;
 }                
 
-CL_API_ENTRY CL_EXT_PREFIX__VERSION_1_2_DEPRECATED socl::CommandQueue * CL_API_CALL
+CL_API_ENTRY CL_API_PREFIX__VERSION_1_2_DEPRECATED socl::CommandQueue * CL_API_CALL
 clCreateCommandQueue(socl::Context              *Ctx,
                      socl::Device               *Dev,
                      cl_command_queue_properties Properties,
                      cl_int                     *RetCode)
-CL_EXT_SUFFIX__VERSION_1_2_DEPRECATED {
+CL_API_SUFFIX__VERSION_1_2_DEPRECATED {
   if (0 != Properties) {
     *RetCode = CL_INVALID_QUEUE_PROPERTIES;
     return NULL;
