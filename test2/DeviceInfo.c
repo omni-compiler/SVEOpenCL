@@ -35,6 +35,9 @@ int main(void)
     printf("\n-------------------------\n");
 
 
+    //DEVICES
+    //TODO: Fix
+    
     cl_uint num_devices;
 
     err = clGetDeviceIDs(platform, CL_DEVICE_TYPE_ALL, 1, NULL, &num_devices);
