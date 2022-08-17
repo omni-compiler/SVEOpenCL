@@ -11,6 +11,7 @@ namespace llvm {
   class StoreInst;
   class Type;
   class Value;
+  class LoadInst;
 }
 
 using FuncMapTy = std::map<llvm::Function *, llvm::Function *>;
